@@ -1,4 +1,3 @@
 James Strickland
-
-Lab_1
+A Table with links to your labs and homework
 
