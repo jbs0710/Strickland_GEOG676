@@ -20,7 +20,7 @@ print ("The answer to Part 1: ", result1)
 
 - Take the following list and add all list items together.
 
-Just like in Part 1, I again used a simple abbreviated assignment " += ".
+Just like in Part 1, I again used a simple abbreviated assignment, but with addition, " += ".
 
 The for loop will then move through the list of values and add each until the end of the list
 
