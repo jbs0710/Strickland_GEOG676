@@ -1,7 +1,9 @@
-# Part 1 - Take the following list and multiply all list items together.
+# Part 1
 
-# To answer Part 1, I used the simple abbreviated assignment " *= "
-# The for loop will then move through the list of values and multiple each until the end of the list
+- Take the following list and multiply all list items together.
+
+To answer Part 1, I used the simple abbreviated assignment " *= "
+The for loop will then move through the list of values and multiple each until the end of the list
 
 >
 ```python
@@ -13,10 +15,12 @@ for a in part1:
 
 print ("The answer to Part 1: ", result1)
 ```
-# Part 2 - Take the following list and add all list items together.
+# Part 2
 
-# Just like in Part 1, I again used a simple abbreviated assignment " += "
-# The for loop will then move through the list of values and add each until the end of the list
+- Take the following list and add all list items together.
+
+Just like in Part 1, I again used a simple abbreviated assignment " += "
+The for loop will then move through the list of values and add each until the end of the list
 
 
 ```python
@@ -30,7 +34,7 @@ print ("The answer to Part 2: ", result2)
 ```
 # Part 3                                                                                                        
 
-# isEven = num1 % 2 == 0                                                                                        
+- isEven = num1 % 2 == 0                                                                                        
 
 >
 ```python
