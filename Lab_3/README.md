@@ -54,7 +54,7 @@ file.close()
 
 # For Loop and IF/ELIF/ELSE Statements
 
-- This portion will go through each line of our text file and use IF/ELIF/ELSE statements to see if our shape are equal to (==) our **Rectangle()**, **Circle()**, or **Triangle()**. When that statement is **TRUE**, a print function is run by calling the method **getArea()** for each shape.
+- This portion will go through each line of our text file and use **IF/ELIF/ELSE statements** to see if our shape are equal to **(==)** our **Rectangle()**, **Circle()**, or **Triangle()**. When that statement is **TRUE**, a print function is run by calling the method **getArea()** for each shape.
 
 >
 ```python
