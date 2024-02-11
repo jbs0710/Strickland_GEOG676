@@ -45,7 +45,7 @@ class Triangle(Shape):
 
 >
 ```python
-file = open('M:\\Staff Folders\\Ben Strickland\\TAMU\Strickland_GEOG676\\Lab_3\\shape.txt', "r"). "r" 
+file = open('M:\\Staff Folders\\Ben Strickland\\TAMU\Strickland_GEOG676\\Lab_3\\shape.txt', "r").
 
 lines = file.readlines()
 
@@ -74,3 +74,9 @@ for line in lines:
     else:
         pass
 ```
+
+>
+>
+
+>
+
