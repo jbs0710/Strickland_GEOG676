@@ -6,9 +6,9 @@
 # Define our Workspace and Geodatabase
 
 - This portion is the setting of our **workspace** and **folder path**. Once this is set, 
-then we create our **Geodatabase** of **GDB**, which is called **Campus**.
+then we create our **Geodatabase** or **GDB**, which is called **Campus**.
 
-- We created 2 variables, **folder_path** and **gdb_name**. This will help us further down our code as we move along a create our buffers and intersects.
+- We created 2 variables, **folder_path** and **gdb_name**. This will help us further down our code as we move along and create our buffers and intersects.
 
 ```python
 import arcpy
@@ -28,7 +28,7 @@ print("Geodatabase Created")
 # Path to CSV file we are using
 
 - We then will create our garage points with the help of our csv file, **garages.csv**.
-Once this conversion is successful, we then input this layer in to our **Campus.gdb**.
+Once this conversion is successful, we then input this layer into our **Campus.gdb**.
 
 
 ```python
@@ -48,9 +48,9 @@ print("Garages Points Created")
 
 # Copy feature class to our current workspace
 
-- In previous weeks, we have used a campus.gdb with feature classes that we would now like to use in our current workspace. 
+- In previous weeks, we have used another geodatabase, campus.gdb, with feature classes that we would now like to use in our current workspace. 
 
-- Out next step is to import a feature class, **Structures**, from our previously used campus.gdb, to our current, **Campus** geodatabase, and name it **Buildings**.
+- To do this, we need import a feature class, **Structures**, from our previously used campus.gdb, to our current **Campus** geodatabase, and name it **Buildings**.
 
 ```python
 # Copy feature class to our workspace geodatabase from another geodatabase
@@ -78,7 +78,7 @@ print("Points Reprojected")
 
 # Buffer and Intersect
 
-- Our next set is to use some of our basic operations we have learned, which is the **Buffer** and **Intersect** tool. We are going to create a buffer around our Garage Points, and then see which buildings intersect with the distance given.
+- Our next set is to use some of our basic operations we have learned, which is the **Buffer** and **Intersect** tool. We are going to create a buffer around our Garage Points, and then see which buildings intersect within the given distance.
 
 
 ```python
@@ -95,7 +95,7 @@ print("Intersect Created")
 
 # Table creation from our Intersect feature class
 
-- Now that we have **Garage_Building_Intersect** feature class, we now want to a csv to show which buildings intersect with the distance given. To do this, we use a **TableToTable** conversion. Once this is done, we are finished!
+- Now that we have **Garage_Building_Intersect** feature class, we now want to a csv to show which buildings intersect within the given distance. To do this, we use a **TableToTable** conversion. Once this is done, we are finished!
 
 ```python
 # New table now in our working folder
