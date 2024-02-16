@@ -8,12 +8,12 @@
 - This portion is the setting of our **workspace** and **folder path**. Once this is set, 
 then we create our **Geodatabase** or **GDB**, which is called **Campus**.
 
-- We created 2 variables, **folder_path** and **gdb_name**. This will help us further down our code as we move along and create our buffers and intersects.
+- 2 variables we have created, **folder_path** and **gdb_name**, will help us further down our code as we move along and create our buffers and intersects. 
 
 ```python
 import arcpy
 
-#Define our Workspace
+# Define our Workspace
 arcpy.env.workspace = r"M:\Staff Folders\Ben Strickland\TAMU\ArcProPython\Lab4"
 folder_path = r"M:\Staff Folders\Ben Strickland\TAMU\ArcProPython\Lab4\Lab4_FunWithArcPy"
 gdb_name = 'Campus.gdb'
@@ -25,7 +25,7 @@ arcpy.CreateFileGDB_management(folder_path, gdb_name)
 print("Geodatabase Created")
 ```
 
-# Path to CSV file we are using
+# Path to CSV file
 
 - We then will create our garage points with the help of our csv file, **garages.csv**.
 Once this conversion is successful, we then input this layer into our **Campus.gdb**.
@@ -82,7 +82,7 @@ print("Points Reprojected")
 
 
 ```python
-#Buffer the Garages
+# Buffer the Garages
 garageBuffer = arcpy.Buffer_analysis(gdb_path + '\Garage_Points_Reprojected', gdb_path + '\Garage_Points_Buffer', 150)
 
 print("Buffer Created")
