@@ -8,7 +8,8 @@
 - This portion is the setting of our **workspace** and **folder path**. Once this is set, 
 then we create our **Geodatabase** or **GDB**, which is called **Campus**.
 
-- 2 variables we have created, **folder_path** and **gdb_name**, will help us further down our code as we move along and create our buffers and intersects. 
+- The variables created give us our workspace, our folder we are saving our work in, 
+our geodatabase that we will save our feature classes in, and our path to that geodatabase.
 
 ```python
 import arcpy
