@@ -65,7 +65,7 @@ arcpy.Copy_management(buildings_campus, buildings)
 print("Feature Classes Imported")
 ```
 
-# Reporject our Garage Points
+# Reproject our Garage Points
 
 - Out next step is to reproject our **Garage_Points**.
 
@@ -79,7 +79,7 @@ print("Points Reprojected")
 
 # Buffer and Intersect
 
-- Our next set is to use some of our basic operations we have learned, which is the **Buffer** and **Intersect** tool. We are going to create a buffer around our Garage Points, and then see which buildings intersect within the given distance.
+- Our next step is to use some of our basic operations we have learned, which is the **Buffer** and **Intersect** tool. We are going to create a buffer around our Garage Points, and then see which buildings intersect within the given distance.
 
 
 ```python
@@ -96,7 +96,7 @@ print("Intersect Created")
 
 # Table creation from our Intersect feature class
 
-- Now that we have **Garage_Building_Intersect** feature class, we now want to a csv to show which buildings intersect within the given distance. To do this, we use a **TableToTable** conversion. Once this is done, we are finished!
+- Now that we have **Garage_Building_Intersect** feature class, we now want a csv to show which buildings intersect within the given distance. To do this, we use a **TableToTable** conversion. Once this is done, we are finished!
 
 ```python
 # New table now in our working folder
