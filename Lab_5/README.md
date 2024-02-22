@@ -87,7 +87,7 @@ class Tool(object):
         return params
 ```
 
-- The rest of these parameters are the rest of the default script created by ArcPro and we do not need to edit these at this time
+- The rest of these parameters are the rest of the default script created by ArcPro and we do not need to edit these at this time.
 
 ```python
     def isLicensed(self):
