@@ -4,13 +4,15 @@
 
 # Creating a toolbox
 
-- In this lab, we are creating a **toolbox**. This toolbox will perfect a task that we had previously performed in Lab 4 - Fun with ArcPy. 
+- In this lab, we are creating a **toolbox**. This toolbox will perform a task that we had previously performed in Lab 4 - Fun with ArcPy. 
 
 - We will now perform those same tasks, but now we will create a tool where we can input parameters from our **GDB**.
 
-- When we open ArcPro, we will navigate to our **ArcCatalog** tab on the right hand side and right-click **Toolboxes** and select **New Python Tool**. We will name the tool and save it into our working folder. Once this is done, we refresh that same **Toolboxes** tab, refresh it, and we now see our newly created toolbox. 
+- When we open ArcPro, we will navigate to our **ArcCatalog** tab on the right hand side and right-click **Toolboxes** and select **New Python Tool**. We will name the tool and save it into our working folder. Once this is done, we refresh that same **Toolboxes** tab, and we now see our newly created toolbox. 
 
 - When we click the arrow down, we see a script automatically created by Arc. We right click and edit, and we now see this default script ready for us to edit.
+
+- The top portion of the script is below
 
 ```python
 import arcpy
