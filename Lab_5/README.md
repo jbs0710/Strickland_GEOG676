@@ -12,7 +12,7 @@
 
 - When we click the arrow down, we see a script automatically created by Arc. We right click and edit, and we now see this default script ready for us to edit.
 
-- The top portion of the script is below. We can change the name of the tool to label **Building Proximity** and its description.
+- The top portion of the script is below. We can change the name of the tool to label **Lab5 - Creating a Toolbox**.
 
 ```python
 import arcpy
@@ -32,10 +32,9 @@ class Toolbox(object):
 class Tool(object):                                                     
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
-        self.label = "Building Proximity"
-        self.description = "Determines what buildings are near targeted building"
-        self.canRunInBackground = False
-        self.category = "Building Tools"
+        self.label = "Lab5 - Creating a Toolbox"
+        self.description = ""
+        
 ```
 - This area, **getParameters** is our main area of focus as we input our edits to this script. We want our user to be able to input a **GDB Folder**, **GDB Name**, **CSV File**, **Layer Name**, and the original  **Campus GDB**. These are the parameters needed for the process of our Garage points to be created from our csv file, our buildings to be moved to our current GDB, and our Garage points to have a buffer.
 
