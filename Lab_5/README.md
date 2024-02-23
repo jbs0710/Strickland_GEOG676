@@ -12,7 +12,7 @@
 
 - When we click the arrow down, we see a script automatically created by Arc. We right click and edit, and we now see this default script ready for us to edit.
 
-- The top portion of the script is below
+- The top portion of the script is below. We can change the name of the tool to label **Building Proximity** and its description.
 
 ```python
 import arcpy
