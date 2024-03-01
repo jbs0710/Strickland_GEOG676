@@ -4,7 +4,7 @@
 
 # Map Generation Toolbox
 
-- In this lab, we are creating a **toolbox**, just like we did in Lab 5. However, the difference will be in that we will generate a **Color Ramp** map, featuring our Parking Garages layer. As our tool runs, we will add **progressors** that will help our user how our tool is running in real time, showing **labeled messages** to our user of what our tool is performing, and how much time is left before our tool is finished running.
+- In this lab, we are creating a **toolbox**, just like we did in Lab 5. However, the difference will be in that we will generate a **Color Ramp** map, featuring our Parking Garages layer. As our tool runs, we will add **progressors** that will help our user see how our tool is running in real time, showing **labeled messages** to our user of what our tool is performing, and how much time is left before our tool is finished running.
 
 - Just like in Lab 5, we will be doing the same things to start this lab. 
 
@@ -40,7 +40,7 @@ class GraduatedColorsRenderer(object):
         self.category = "Map Tools"
 
 ```
-- Just like in Lab 5, this area, **getParameters** is our main area of focus as we input our edits to this script. Our user will input their **Map File**, **Layer** (in this case, **Parking Garages**), their **Output Location**, and the name of their new (copied) map, **Project Name**.
+- Just like in Lab 5, this area, **getParameters**, is our main area of focus as we input our edits to this script. Our user will input their **Map File**, **Layer** (in this case, **Parking Garages**), their **Output Location**, and the name of their new (copied) map, **Project Name**.
 
 ```python
     def getParameterInfo(self):
@@ -133,7 +133,7 @@ class GraduatedColorsRenderer(object):
         time.sleep(readTime)
 ```
 
-- In this portion of code, our code is looking for our layer within our map file. Our code is running an **IF/ELSE statement** making sure our layer is a correct input by our user.
+- In this portion of code, our code is looking for our layer within our map file. Our code is running an **IF/ELSE statement** making sure our layer is a correct input by our user for our tool/code to properly perform.
 
 ```python
         for layer in campus.listLayers():
@@ -178,7 +178,7 @@ class GraduatedColorsRenderer(object):
 ```
 - Our last few **labels and messages** to our user shows the saving of their work and the finishing touches of our tool. 
 
-- The last portion of our tools saves out a copy of the project, now showing the actually **Graduated Color Renderer** of the **Garage Parking** layer. It is saved with the name provided by the user and in the folder location provided by the user.
+- The last portion of our tools saves out a copy of the project, now showing the actually **Graduated Color Renderer** of the **Garage Parking** layer. It is saved with the name provided by the user and in the folder location provided by the user. Our user can navigate to their folder and open the map, and will see a generated **Graduated Color Renderer** map.
 
 ```python
         # Final progessor message to the user
