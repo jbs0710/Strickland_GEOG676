@@ -135,7 +135,6 @@ class GraduatedColorsRenderer(object):
 
 - In this portion of code, our code is looking for our layer within our map file. Our code is running an **IF/ELSE statement** making sure our layer is a correct input by our user.
 
-- 
 ```python
         for layer in campus.listLayers():
         # Check if layer is a feature layer
