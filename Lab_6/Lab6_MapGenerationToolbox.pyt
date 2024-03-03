@@ -105,8 +105,8 @@ class GraduatedColorsRenderer(object):
             if layer.isFeatureLayer:
                 # Obtain a copy of the layer's symbology
                 symbology = layer.symbology
-                    # Check if it has a 'renderer' attribute
-                if hasattr(symbology, 'renderer'):
+                    # Check if it has a 'renderer' attribute. This is important because not all layers support renderers
+                    if hasattr(symbology, 'renderer'):
                     # Check if the layer's name is Layer to Classify (GarageParking)
                     if layer.name == parameters[1].valueAsText:
                         
