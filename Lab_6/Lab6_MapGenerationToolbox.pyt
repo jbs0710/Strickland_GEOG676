@@ -40,7 +40,7 @@ class GraduatedColorsRenderer(object):
             parameterType= "Required",
             direction= "Input"
         )
-        # Here is where the users Output Location will be (in our case, its out Lab 6 Folder)
+        # Here is where the users Output Location will be (in our case, its our Lab 6 Folder)
         param2 = arcpy.Parameter(
             displayName= "Output Location",
             name= "OutputLocation",
