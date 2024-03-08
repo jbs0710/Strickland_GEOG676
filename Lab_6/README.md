@@ -61,7 +61,7 @@ class GraduatedColorsRenderer(object):
             parameterType= "Required",
             direction= "Input"
         )
-        # Here is where the users Output Location will be (in our case, its out Lab 6 Folder)
+        # Here is where the users Output Location will be (in our case, its our Lab 6 Folder)
         param2 = arcpy.Parameter(
             displayName= "Output Location",
             name= "OutputLocation",
@@ -141,7 +141,7 @@ class GraduatedColorsRenderer(object):
             if layer.isFeatureLayer:
                 # Obtain a copy of the layer's symbology
                 symbology = layer.symbology
-                    # Check if it has a 'renderer' attribute
+                    # Check if it has a 'renderer' attribute. This is important because not all layers support renderers
                 if hasattr(symbology, 'renderer'):
                     # Check if the layer's name is Layer to Classify (GarageParking)
                     if layer.name == parameters[1].valueAsText:
