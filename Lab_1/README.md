@@ -1,4 +1,4 @@
-#GIS_Programming
-GEOG 676 - GIS Prog
+#WEB GIS
+GEOG 678 - Web GIS
 
 Lab_1
